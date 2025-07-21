@@ -1,7 +1,8 @@
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import { useState, useRef, useEffect } from 'react'
-import './App.css'
+// import './App.css'
+import './index.css';
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import { MdDelete } from "react-icons/md";
@@ -11,7 +12,7 @@ function App() {
 
   const [editId, setEditId] = useState(null);
   const [todo, setTodo] = useState("")
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([]);
   const [showFinished, setshowFinished] = useState(false)
   const [deadline, setDeadline] = useState('');
   const [tick, setTick] = useState(0);
